@@ -1,0 +1,125 @@
+/* uncial-antiqua-regular - latin */
+@font-face {
+  font-family: 'Uncial Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Uncial Antiqua'), local('UncialAntiqua-Regular'),
+       url('../fonts/uncial-antiqua-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/uncial-antiqua-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Oswald Regular'), local('Oswald-regular'),
+       url('http://fonts.gstatic.com/s/oswald/v11/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/oswald/v11/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}
+
+/* generic element styles */
+
+html, body {
+	height: 100%; /* ensures we have someplace to display a background image */
+}
+
+h1 {
+	font-family: "Uncial Antiqua", serif;
+	font-size: 112px;
+}
+
+h2 {
+	font-family: "Uncial Antiqua", serif;
+	font-size: 48px;
+}
+
+h3 {
+	font-family: "Uncial Antiqua", serif;
+	font-size: 32px;
+}
+
+#hmHeader {
+	padding: 30px;
+}
+
+#hmSidebar {
+	width: 30%;
+	padding: 30px;
+	display: inline-block;
+}
+
+#hmTotalWins {
+	margin-left: 16px;
+	font-family: "Oswald", "sans serif";
+	font-size: 32px;
+}
+
+#hmLblCurrentWord {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+#hmCurrentWord {
+	height: 40px;
+	margin-left: 40px;
+	padding-top: 20px;
+}
+
+.hmWordLetter {
+	width: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: "Oswald", "sans serif";
+	font-size: 32px;
+}
+
+#hmLblWrongLetters {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+#hmWrongLetters {
+	height: 40px;
+	margin-left: 40px;
+	padding-top: 20px;
+}
+
+.hmWrongLetter {
+	width: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: "Oswald", "sans serif";
+	font-size: 32px;
+}
+
+#hmLblGuessesRemaining {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#hmGuessesRemaining {
+	margin-left: 10px;
+	font-family: "Oswald", "sans serif";
+	font-size: 24px;
+}
+
+#hmPictureWindow {
+	width: 60%;
+	padding-top: 3%;
+	padding-left: 5%;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 35%;
+	z-index: -10;
+	float: right;
+}
+
+#hmStatusPicture {
+	width: 100%;
+	margin-top: 0;
+	padding: 30px;
+	border-style: solid;
+	border-width: 0;
+	border-color: gray;
+	display: inline-block;
+}
